@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>McBride - CS 601 HW 1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="realtimeValidate.js"></script>
+</head>
+
+<body>
+  <main>
+    <div id="form-wrapper" class="bg-white max-w-md margin-x-auto p-2 radius-sm shadow-sm">
+      <!--Title-->
+      <h1 class="text-2xl mb-5">Subscribe to our newsletter</h1>
+      <!--Form-->
+      <form novalidate onsubmit="return validateForm();" autocomplete="off" class="flex-col gap-4">
+        <!--First name-->
+        <div class="flex-col">
+          <label for="firstname" class="text-sm text-light">First name</label>
+          <input type="text" name="firstname" id="firstname" class="input my-xs" />
+          <span id="firstname-length" class="validation-message text-xs text-xlight">Contains at least 2
+            characters</span>
+          <span id="firstname-letters" class="validation-message text-xs text-xlight">Contains only letters</span>
+        </div>
+        <!--Last name-->
+        <div class="flex-col">
+          <label for="lastname" class="text-sm text-light">Last name</label>
+          <input type="text" name="lastname" id="lastname" class="input mx-xs" />
+          <span id="lastname-length" class="validation-message text-xs text-xlight">Contains at least 2
+            characters</span>
+          <span id="lastname-letters" class="validation-message text-xs text-xlight">Contains only letters</span>
+        </div>
+        <!--Email-->
+        <div class="flex-col">
+          <label for="email" class="text-sm text-light">Email</label>
+          <input type="email" name="email" id="email" class="input mx-xs" />
+          <span id="email-format" class="validation-message text-xs text-xlight">Valid email required</span>
+        </div>
+        <!--Package-->
+        <div class="flex-col">
+          <label for="package" class="text-sm text-light">Select package</label>
+          <select id="package" name="package" class="input text-base mx-xs">
+            <option value="" disabled selected>Select a package</option>
+            <option value="bronze">Bronze</option>
+            <option value="silver">Silver</option>
+            <option value="gold">Gold</option>
+            <option value="platinum">Platinum</option>
+          </select>
+          <span id="package-error" class="validation-message text-xs text-xlight">Selection required</span>
+        </div>
+        <hr />
+        <!--Subscribe-->
+        <div class="flex-row gap-1">
+          <input type="checkbox" name="subscribe" id="subscribe" class="checkbox" />
+          <div class="flex-col">
+            <label for="subscribe" class="text-base">Confirm subscription to our newsletter</label>
+            <span id="subscribe-error" class="validation-message text-xs text-xlight">Confirmation required</span>
+          </div>
+        </div>
+        <!--Submit-->
+        <input type="submit" id="submitBtn" value="Subscribe"
+          class="submitBtn bg-blue color-white h-10 mt-5 border-none radius-sm text-base" />
+      </form>
+    </div>
+    <!-- Completion Message -->
+    <div id="completionMessage" style="display: none" class="bg-white max-w-md margin-x-auto p-2 radius-sm shadow-sm">
+      <h1 class="text-2xl text-center">You are subscribed</h1>
+      <p class="text-base text-center text-light">
+        Thank you, <span id="first-name-display">[[FIRST_NAME]]</span>
+        <span id="last-name-display">[[LAST_NAME]]</span>, for subscribing!
+        Your email <span id="email-display">[[EMAIL]]</span> is registered
+        with our <span id="package-display">[[PACKAGE]]</span>
+        package.
+      </p>
+    </div>
+  </main>
+</body>
+
+</html>
