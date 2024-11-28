@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var namePattern = /^[A-Za-z\s]+$/;
   var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
+  // the first four functions seem like they can be combined into two,
+  // but couldn't figure it out, so it's four for now
+
   // FIRST NAME LENGTH
   function validateFirstNameLength(input) {
     var value = input.value.trim();

@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <title>McBride - CS 601 HW 1</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="styles.css" />
+  <title>Submission Form With JS Validation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles.css">
   <script type="module" src="realtimeValidate.js"></script>
 </head>
 
@@ -19,7 +19,7 @@
         <!--First name-->
         <div class="flex-col">
           <label for="firstname" class="text-sm text-light">First name</label>
-          <input type="text" name="firstname" id="firstname" class="input my-xs" />
+          <input type="text" name="firstname" id="firstname" class="input my-xs">
           <span id="firstname-length" class="validation-message text-xs text-xlight">Contains at least 2
             characters</span>
           <span id="firstname-letters" class="validation-message text-xs text-xlight">Contains only letters</span>
@@ -27,7 +27,7 @@
         <!--Last name-->
         <div class="flex-col">
           <label for="lastname" class="text-sm text-light">Last name</label>
-          <input type="text" name="lastname" id="lastname" class="input mx-xs" />
+          <input type="text" name="lastname" id="lastname" class="input mx-xs">
           <span id="lastname-length" class="validation-message text-xs text-xlight">Contains at least 2
             characters</span>
           <span id="lastname-letters" class="validation-message text-xs text-xlight">Contains only letters</span>
@@ -35,7 +35,7 @@
         <!--Email-->
         <div class="flex-col">
           <label for="email" class="text-sm text-light">Email</label>
-          <input type="email" name="email" id="email" class="input mx-xs" />
+          <input type="email" name="email" id="email" class="input mx-xs">
           <span id="email-format" class="validation-message text-xs text-xlight">Valid email required</span>
         </div>
         <!--Package-->
@@ -50,10 +50,10 @@
           </select>
           <span id="package-error" class="validation-message text-xs text-xlight">Selection required</span>
         </div>
-        <hr />
+        <hr>
         <!--Subscribe-->
         <div class="flex-row gap-1">
-          <input type="checkbox" name="subscribe" id="subscribe" class="checkbox" />
+          <input type="checkbox" name="subscribe" id="subscribe" class="checkbox">
           <div class="flex-col">
             <label for="subscribe" class="text-base">Confirm subscription to our newsletter</label>
             <span id="subscribe-error" class="validation-message text-xs text-xlight">Confirmation required</span>
@@ -61,7 +61,7 @@
         </div>
         <!--Submit-->
         <input type="submit" id="submitBtn" value="Subscribe"
-          class="submitBtn bg-blue color-white h-10 mt-5 border-none radius-sm text-base" />
+          class="submitBtn bg-blue color-white h-10 mt-5 border-none radius-sm text-base">
       </form>
     </div>
     <!-- Completion Message -->
