@@ -1,7 +1,5 @@
 ---
-
-CS 601 HW 1
-
+Form validation
 ---
 
 This project is a simple HTML form with custom JavaScript only validation.
