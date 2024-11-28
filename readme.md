@@ -1,6 +1,6 @@
----
+
 Form validation
----
+
 
 This project is a simple HTML form with custom JavaScript only validation.
 It has real-time feedback for the user as they fill out fields for
